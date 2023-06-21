@@ -1,0 +1,120 @@
+/*下方導航欄*/
+.icon-bar {
+  width: 100%;
+  background-color: #ffaaa7;  /*下方導航欄顏色*/
+  overflow: auto;
+  height: 200px;
+}
+.icon-bar a {
+  float: left;
+  width: 25%;
+  text-align: center;
+  padding: 12px 0;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 36px;
+  height: 100%;
+}
+.icon-bar a:hover {
+  background-color: white;
+}
+
+.active {
+  background-color: #04AA6D;
+}
+/*側邊欄*/
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: white;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 6px 6px 6px 32px;
+  text-decoration: none;
+  font-size: 40px;  /*字體大小*/
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+ 
+}
+
+.sidenav a:hover {
+  color: white;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 50px;
+  margin-left: 50px;
+}
+
+div.absolute{
+ position: absolute;
+ top: 0px;
+ right: 1%;
+ line-height:150PX;  /*右側導航欄按鈕位置*/
+}
+
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+* {
+  box-sizing: border-box;
+}
+#r {
+  display: flex ;
+  justify-content: center;
+  align-items: center;
+  float:left;
+  width: 33%;
+  padding: 20px;
+  line-height: 75px;/*每列的高度*/
+  margin-right: 3px
+
+}
+
+/* Create three equal columns that sits next to each other */
+#c {
+  flex: 33%;
+  padding: 5px;
+
+}
+
+.infocss{
+  height: 45px;
+  width: 50%;
+}
+
+.headertext{
+  color: black;
+  width: 100%;
+  font-size: 65px; /*字體大小*/
+  line-height:190PX; /*字置中*/
+  position: absolute;
+  left: 10px;
+}
+
+.inputstyle{
+  width: 60%;
+  height: 50px;
+  display: black;
+  margin: 15px auto;
+  font-size: 20px;
+  text-align: left;
+  position: relative;
+  left: 18%;
+  top: 50px;
+  border-radius: 5px;
+}
